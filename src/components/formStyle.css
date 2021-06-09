@@ -1,0 +1,13 @@
+#material-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .text-field {
+  width: 30%;
+  margin: 2rem 0;
+} */
+#submit-btn{
+    margin-top: 1rem;
+}
