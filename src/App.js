@@ -4,14 +4,17 @@ import "./App.css";
 // import FormFunctional from "./components/FormFunctional";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
-import { deepPurple, green } from "@material-ui/core/colors";
+import { deepPurple,  red } from "@material-ui/core/colors";
 import Create from "./pages/Create";
 import Notes from "./pages/Notes";
+// eslint-disable-next-line
 import Layout from "./components/Layout";
+import NewLayout from "./components/NewLayout";
+// import Loader from "./pages/Loder";
 const theme = createMuiTheme({
   palette: {
     primary: deepPurple,
-    secondary: green,
+    secondary: red,
   },
   typography: {
     fontFamily: "Quicksand",
@@ -28,12 +31,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <Layout>
+        <NewLayout>
           <Switch>
             <Route exact path="/" component={Notes} />
             <Route path="/create" component={Create} />
           </Switch>
-        </Layout>
+        </NewLayout>
       </BrowserRouter>
     </ThemeProvider>
   );

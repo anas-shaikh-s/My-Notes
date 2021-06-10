@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Container,
   TextField,
@@ -14,6 +14,7 @@ import {
 
 import AddBoxOutlinedIcon from "@material-ui/icons/AddBoxOutlined";
 import { useHistory } from "react-router";
+import Loader from "./Loder";
 const useStyles = makeStyles({
   field: {
     marginTop: 10,
@@ -29,7 +30,14 @@ const Create = () => {
   const [titleError, setTitleError] = useState(false);
   const [detailsError, setDetailsError] = useState(false);
   const [category, setCategory] = useState("money");
+  const [loading, setLoading] = useState(true);
   const history = useHistory();
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setLoading(false)
+    }, 300);
+  },[])
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(title, details);
@@ -52,7 +60,9 @@ const Create = () => {
     }
   };
   const classes = useStyles();
-  return (
+  return loading ? (
+    <Loader />
+  ) : (
     <Container>
       <Typography variant="h3" color="primary">
         Create Note

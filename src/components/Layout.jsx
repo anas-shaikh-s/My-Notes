@@ -14,6 +14,8 @@ import React from "react";
 import BorderColorOutlinedIcon from "@material-ui/icons/BorderColorOutlined";
 import NotesOutlinedIcon from "@material-ui/icons/NotesOutlined";
 import { useHistory, useLocation } from "react-router";
+import { deepPurple } from "@material-ui/core/colors";
+
 const drawerWidth = 220;
 const useStyles = makeStyles((theme) => {
   return {
@@ -31,7 +33,7 @@ const useStyles = makeStyles((theme) => {
       width: drawerWidth,
     },
     active: {
-      backgroundColor: "#f4f4f4",
+      backgroundColor: deepPurple[100],
     },
     drawerTitle: {
       padding: theme.spacing(3),
@@ -58,6 +60,7 @@ const Layout = ({ children }) => {
       link: "/create",
     },
   ];
+  
   return (
     <div className={classes.root}>
       <AppBar className={classes.appbar}>

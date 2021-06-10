@@ -1,34 +1,3 @@
 {
-  "notes": [
-    {
-      "title": "Python",
-      "details": "Eric Snow was interested in hearing whether or not other core developers would find a PM helpful.  \n\nLuciano Ramalho said that he was strongly in favor of having a PM who could assess the needs of the community from the perspective of the community rather than only the perspective of core developers. This idea overlaps with the questions he raised in his lightning talk at this summit. He also mentioned that Go has a PM role similar to what Eric Snow was suggesting.\n\nOther attendees discussed how this kind of role could be funded and considered how much benefit the role could bring considering that the PSF is working with limited financial resources. They also discussed the differences between a Product Manager and a Program Manager and determined that this role would be more like a Program Manager.",
-      "category": "work",
-      "id": 6
-    },
-    {
-      "title": "What Does the Community Need?",
-      "details": "Over the years, he's thought about how he and other contributors decide what to work on and why. What directs the efforts of contributors and core developers? Contributors make decisions based on their availability, expertise, and interests. Core developers need to act as stewards for the language. There's plenty of collaboration that goes on, but everyone has their own idea of what the community needs, what would be interesting to work on, and what the Python language needs. As a result, it can be hard to see the bigger picture.",
-      "category": "todos",
-      "id": 7
-    },
-    {
-      "title": "Material Icons",
-      "details": "1,100+ React Material icons ready to use from the official website.\nThe following npm package, @material-ui/icons, includes the 1,100+ official Material icons converted to SvgIcon components.1,100+ React Material icons ready to use from the official website.1,100+ React Material icons ready to use from the official website.\nThe following npm package, @material-ui/icons, includes the 1,100+ official Material icons converted to SvgIcon components.\nThe following npm package, @material-ui/icons, includes the 1,100+ official Material icons converted to SvgIcon components.",
-      "category": "money",
-      "id": 8
-    },
-    {
-      "title": "ds",
-      "details": "sdvs",
-      "category": "work",
-      "id": 10
-    },
-    {
-      "title": "cscs",
-      "details": "fs",
-      "category": "work",
-      "id": 11
-    }
-  ]
+  "notes": []
 }
